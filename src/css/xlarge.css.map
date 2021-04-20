@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/xlarge.scss"
+    ],
+    "names": [],
+    "file": "xlarge.css"
+}

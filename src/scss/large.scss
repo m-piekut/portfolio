@@ -1,0 +1,47 @@
+@media only screen and (min-width: 992px) {
+  .navigation {
+    height: 649px;
+    width: 482px;
+    left: -230px;
+    &__button {
+      display: none;
+    }
+  }
+
+
+  .aboutMe {
+    max-width: 1600px;
+    &__tittle {
+      font-size: 3.7rem;
+      padding-bottom: 20px;
+    }
+
+    &__text {
+      margin: 25px auto;
+      font-size: 1.6rem;
+      width: 40%;
+    }
+
+    &__photo {
+      right: -40px;
+      height: 90%;
+      max-height: 650px;
+      width: auto;
+    }
+    &__circleWrapper{
+      bottom: -35px;
+    }
+    &__circle {
+      width: 70px;
+      height: 70px;
+
+    }
+  }
+
+
+
+
+
+
+
+}

@@ -1,0 +1,16 @@
+@media only screen and (min-width: 768px) {
+    .aboutMe{
+        &__tittleWrapper{
+            margin: 30px auto;
+        }
+        &__text{
+            margin: 0 20%;
+            border-radius: 15px;
+            padding: 40px 50px;
+        }
+        &__photo{
+            right: -160px;
+        }
+    }
+
+  }
