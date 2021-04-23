@@ -12,5 +12,26 @@
             right: -160px;
         }
     }
+    .pageTittle{
+        height: 40px !important;
+        padding: 30px;
+        width: auto;
+    }
+    .pageSVG{
+        position: fixed;
+        top: 60%;
+    }
 
+    .projects{
+       
+        &__content{
+            display: flex;
+            flex-direction: row;
+
+        }
+        &__SVG{
+            position: sticky;
+            
+        }
+    }
   }

@@ -1,0 +1,30 @@
+@media only screen and (min-width: 768px) {
+  .aboutMe__tittleWrapper {
+    margin: 30px auto;
+  }
+  .aboutMe__text {
+    margin: 0 20%;
+    border-radius: 15px;
+    padding: 40px 50px;
+  }
+  .aboutMe__photo {
+    right: -160px;
+  }
+  .pageTittle {
+    height: 40px !important;
+    padding: 30px;
+    width: auto;
+  }
+  .pageSVG {
+    position: fixed;
+    top: 60%;
+  }
+  .projects__content {
+    display: flex;
+    flex-direction: row;
+  }
+  .projects__SVG {
+    position: sticky;
+  }
+}
+/*# sourceMappingURL=medium.css.map */

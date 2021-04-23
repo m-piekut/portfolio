@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import sampleReducer from './slices/sampleSlice'
+import languageReducer from './slices/LanguageSlice'
 export default configureStore({
     reducer: {
-        sample: sampleReducer,
+        language: languageReducer,
     },
 })

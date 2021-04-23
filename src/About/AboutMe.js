@@ -3,7 +3,7 @@ import photo from '../images/photo.png'
 const AboutMe = () => {
     return ( 
         <div className="aboutMe">
-            <div className="aboutMe__tittleWrapper drop test">
+            <div className="aboutMe__tittleWrapper drop">
                 <h1 className="aboutMe__tittle"> Cześć,<br/> Jestem Marek <br/>  Frontend-Developer </h1>
                 <div className="aboutMe__circleWrapper">
                     <div className="aboutMe__circle inner darkColor"></div>

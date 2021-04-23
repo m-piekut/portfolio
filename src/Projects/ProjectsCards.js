@@ -1,14 +1,27 @@
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import ProjectsInfo from './ProjectsInfo'
-// import Icons from '../components/Icons'
+
 
 
 const ProjectsCards = () => {
+
+    const [content, setContent] = useState(  )
+    const {value} = useSelector(state=> state.language)
+
+
+    useEffect(()=>{
+        value === 'PL' ? setContent(ProjectsInfo.PL) : setContent(ProjectsInfo.EN) 
+    },[value])
+
+
+
     return ( 
         <div className="projects__cards">
 
-            {ProjectsInfo.map((card) =>(
+            {content && content.map((card) =>(
                 <div className="projects__cardWrapper" key={card.id}>
-                    <div className="projects__infoCard">
+                    <div tabIndex="1"  className="projects__infoCard">
                         <h2 className="projects__tittle">{card.name}</h2>
                         <p className="projects__info">{card.info}</p>
                         <div className="projects__icons">

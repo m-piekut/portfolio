@@ -1,0 +1,29 @@
+@media only screen and (min-width: 576px) {
+  .aboutMe__tittleWrapper {
+    width: fit-content;
+    padding: 20px;
+  }
+  .aboutMe__tittle {
+    font-size: 2.2rem;
+    letter-spacing: 2.5px;
+  }
+  .aboutMe__circleWrapper {
+    bottom: -15px;
+  }
+  .aboutMe__circle {
+    height: 30px;
+    width: 30px;
+  }
+  .aboutMe__text {
+    margin-top: 7%;
+    font-size: 1.6rem;
+    max-width: 634px;
+  }
+  .aboutMe__photo {
+    right: -150px;
+  }
+  .projects__info {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=small.css.map */

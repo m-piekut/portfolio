@@ -1,0 +1,40 @@
+@media only screen and (min-width: 992px) {
+  .navigation {
+    height: 649px;
+    width: 482px;
+    left: -230px;
+  }
+  .navigation__button {
+    display: none;
+  }
+  .aboutMe {
+    max-width: 1600px;
+  }
+  .aboutMe__tittle {
+    font-size: 3.7rem;
+    padding-bottom: 20px;
+  }
+  .aboutMe__text {
+    margin: 25px auto;
+    font-size: 1.6rem;
+    width: 40%;
+  }
+  .aboutMe__photo {
+    right: -40px;
+    height: 90%;
+    max-height: 650px;
+    width: auto;
+  }
+  .aboutMe__circleWrapper {
+    bottom: -35px;
+  }
+  .aboutMe__circle {
+    width: 70px;
+    height: 70px;
+  }
+  .projects__content {
+    width: 90%;
+    justify-content: flex-end;
+  }
+}
+/*# sourceMappingURL=large.css.map */

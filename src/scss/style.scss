@@ -65,7 +65,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   overflow: hidden;
 
 }
-
+.wapperTest{
+  margin: 0 auto;
+}
 
 
 .pageTittle{
@@ -77,7 +79,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
   padding: 15px 30px;
   width: fit-content;
+  flex-shrink: 0;
 }
+.pageSVG{
+  flex-shrink: 0;
+  margin: 20px auto;
+  width: 100%;
+}
+
 
 .navigation{
   transition: 1s;
@@ -298,6 +307,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
 }
 
+
+// PROJECT
+// PROJECT
+// PROJECT
+
+
 .projects{
   display: flex;
   flex-direction: column;
@@ -320,7 +335,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
+    overflow: hidden;
     
     
     z-index: 100;
@@ -333,10 +349,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-radius: 9px;
     max-height: 50px;
     width: 50%;
-    transition:  max-height 0.5s, width .5s;
-    overflow: scroll;
+    transition:  max-height .5s, width .5s;
     
-    &:hover {
+    &:hover, &:active, &:focus {
+      // height: calc(100% + 20px);
       max-height: calc(100% + 20px);
       width: 80%;
       & > .projects__info, & > .projects__icons{
@@ -356,8 +372,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   &__info, &__icons{
     margin: 10px 20px;
+    width: 200px;
+    display: flex;
     // display: none;
 
+  }
+  &__info{
+    text-align: center;
   }
   &__icons{
     width: 100%;

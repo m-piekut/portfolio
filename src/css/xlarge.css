@@ -1,0 +1,51 @@
+@media only screen and (min-width: 1200px) {
+  .pageTittle {
+    position: absolute;
+    left: 15%;
+  }
+  .projects__SVG {
+    width: 500px;
+    height: auto;
+  }
+  .projects__content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+  }
+  .projects__cards {
+    width: 70%;
+    max-width: 900px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .projects__cardWrapper {
+    width: 40%;
+    height: 241px;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .pageTittle {
+    margin-top: 60px;
+  }
+  .projects .wrapperTest {
+    position: sticky;
+    top: 200px;
+  }
+  .projects__SVG {
+    width: 600px;
+    height: auto;
+    position: sticky;
+    bottom: 0px;
+  }
+  .projects__content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+/*# sourceMappingURL=xlarge.css.map */
