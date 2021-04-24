@@ -22,6 +22,11 @@
   .projects__content {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .projects__cards {
+    width: 50%;
   }
   .projects__SVG {
     position: sticky;

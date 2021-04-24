@@ -20,6 +20,7 @@
     .pageSVG{
         position: fixed;
         top: 60%;
+
     }
 
     .projects{
@@ -27,7 +28,12 @@
         &__content{
             display: flex;
             flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
 
+        }
+        &__cards{
+            width: 50%;
         }
         &__SVG{
             position: sticky;

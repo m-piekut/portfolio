@@ -9,6 +9,7 @@ import Nav from './Navigation/Nav';
 import { Route, Switch } from 'react-router';
 import { HashRouter } from 'react-router-dom';
 import Projects from './Projects/Projects';
+import Skills from './Technologies/Skills';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 
             <Route exact path='/'><AboutMe/></Route>
             <Route  path='/projects'><Projects/></Route>
+            <Route  path='/skills'><Skills/></Route>
            
           </Switch>
     </div>

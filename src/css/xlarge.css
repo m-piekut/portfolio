@@ -26,6 +26,20 @@
     height: 241px;
     max-width: 400px;
   }
+  .skills {
+    flex-direction: row;
+  }
+  .skills__content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills__SVGWrapper {
+    align-self: center;
+  }
+  .skills__SVG {
+    height: 700px;
+  }
 }
 
 @media only screen and (min-width: 1500px) {
@@ -34,7 +48,8 @@
   }
   .projects .wrapperTest {
     position: sticky;
-    top: 200px;
+    top: 0;
+    height: 100vh;
   }
   .projects__SVG {
     width: 600px;

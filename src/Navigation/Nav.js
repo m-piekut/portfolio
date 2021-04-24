@@ -28,7 +28,7 @@ const Nav = () => {
         <nav className="navigation__list">
           <NavLink className="navigation__item " exact to="/">{content.aboutMe}</NavLink>
           <NavLink className="navigation__item " to="/projects">{content.work}</NavLink>
-          <NavLink className="navigation__item " to="/technologies">{content.skills}</NavLink>
+          <NavLink className="navigation__item " to="/skills">{content.skills}</NavLink>
           <NavLink className="navigation__item " to="/contact">{content.contact}</NavLink>
         <div className="navigation__languageButtons">
           <button onClick={()=> dispatch(changeLanguage('PL'))}>PL</button>

@@ -1,4 +1,4 @@
-import PageTittle from "../components/PageTittlle"
+
 import {ReactComponent as ProjektText} from './images/PROJEKTY.svg'
 import ProjectsAnimations from "./ProjectsAnimation";
 
