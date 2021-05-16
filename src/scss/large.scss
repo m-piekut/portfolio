@@ -1,4 +1,11 @@
 @media only screen and (min-width: 992px) {
+
+  .content{
+    width: 90%;
+    justify-content: flex-end;
+  }
+
+
   .navigation {
     height: 649px;
     width: 482px;
@@ -45,6 +52,25 @@
     }
   }
 
-
-
+.skills{
+  &__SVGWrapper{
+    // display: block;
+    width: auto;
+  }
+}
+.contact{
+  &__form{
+    position: absolute;
+    flex-direction: row;
+    align-items: flex-start;
+    right: 5%;
+  }
+  &__formContent{
+    height: 300px;
+  }
+  &__inputs{
+    width: 80%;
+    margin-right: 20px;
+  }
+}
 }

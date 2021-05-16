@@ -4,20 +4,45 @@ import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import {changeLanguage} from '../redux/slices/LanguageSlice'
 import NavLanguages from './NavLanguages'
 
+
+
 const Nav = () => {
   const {value} = useSelector(state=> state.language)
   const dispatch = useDispatch();
   const [content, setContent] = useState(NavLanguages.PL) 
   const [showMenu, setShowMenu] = useState(true);  
+  
+  const [languageInfo, setLanguageInfo] = useState(localStorage.getItem('Language'))
+  
+  
+  
   useEffect(()=>{
     if(window.innerWidth >= 992){
       setShowMenu(false)
       
     }
   },[])
-
-  useEffect(()=>{
-      value === 'PL' ? setContent(NavLanguages.PL) : setContent(NavLanguages.EN) 
+  
+  
+  const handleChangeLanguage = (language) =>{
+    localStorage.setItem('Language', language)
+    dispatch(changeLanguage(localStorage.getItem("Language")))
+  }
+  
+  
+  useEffect(()=>{  
+      const plButton = document.querySelector('.navigation__languageButton--PL')
+      const enButton = document.querySelector('.navigation__languageButton--EN')
+      console.log(languageInfo)
+      if(value === 'EN'){
+        setContent(NavLanguages.EN)
+        plButton.classList.remove('navigation__languageButton--active')
+        enButton.classList.add('navigation__languageButton--active')
+      }else{
+        enButton.classList.remove('navigation__languageButton--active')
+        plButton.classList.add('navigation__languageButton--active')
+        setContent(NavLanguages.PL)
+      }
   },[value])
 
 
@@ -31,9 +56,8 @@ const Nav = () => {
           <NavLink className="navigation__item " to="/skills">{content.skills}</NavLink>
           <NavLink className="navigation__item " to="/contact">{content.contact}</NavLink>
         <div className="navigation__languageButtons">
-          <button onClick={()=> dispatch(changeLanguage('PL'))}>PL</button>
-          <button onClick={()=> dispatch(changeLanguage('EN'))}>EN</button>
-          <button>{value}</button>
+          <button className="navigation__languageButton navigation__languageButton--PL navigation__languageButton--active" onClick={()=>handleChangeLanguage('PL')}>PL</button>
+          <button className="navigation__languageButton navigation__languageButton--EN" onClick={()=> handleChangeLanguage('EN')}>EN</button>
 
         </div>
         </nav>

@@ -8,7 +8,7 @@ const Projects = () => {
     return ( 
         <div className="projects section">
             <ProjektText className="pageTittle"/>
-            <div className="projects__content">
+            <div className="projects__content content">
 
             <ProjectsAnimations/>
             <ProjectsCards/>

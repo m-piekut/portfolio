@@ -34,8 +34,8 @@ const ProjectsCards = () => {
                         <img className="projects__cardImg" src={card.image} alt=""/>
                     </div>
                     <div className="projects__buttons">
-                        <a href={card.live}><button className="fas fa-eye projects__button projects__button--live"></button></a>
-                        <a href={card.code}><button className="fab fa-github projects__button projects__button--git"></button></a>
+                        <a target="_blank"  rel="noreferrer" href={card.live}><button className="fas fa-eye projects__button projects__button--live"></button></a>
+                        <a target="_blank"  rel="noreferrer" href={card.code}><button className="fab fa-github projects__button projects__button--git"></button></a>
                         <div className="projects__buttonsLeft"></div>
                     </div>
                 </div>
