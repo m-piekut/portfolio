@@ -1,4 +1,5 @@
-$projects-color: #003566;
+$about-color: #003566;
+$projects-color: #62B3FF;
 $technology-color: #8338EC;
 $contact-color: #FFBE0B;
 $dark-color: #222222;
@@ -146,7 +147,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     transition: box-shadow .3s, background-color .3s;
 
     &:nth-of-type(1):hover{
-      background-color: $projects-color;
+      background-color: $about-color;
     }
     &:nth-of-type(2):hover{
       background-color: $projects-color;
@@ -161,7 +162,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   &__item.active{
     box-shadow: $inner-shadow;
     &:nth-of-type(1){
-      background-color: $projects-color;
+      background-color: $about-color;
     }
     &:nth-of-type(2){
       background-color: $projects-color;
@@ -291,7 +292,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
     &__tittle{
       // width: fit-content;
-        color: #0084FF;
+        color: $about-color;
         font-size: 1.7rem;
         font-weight: bold;
         // line-height: 23.15px;
@@ -310,11 +311,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         margin-right: 8px;
     }
     &__text{
+      position: relative;
         margin-left: 10%;
         padding: 15px 35px 10px 25px;
         font-size: 1.2rem;
         color: white;
-        background-color: $projects-color;
+        background-color: $about-color;
         width: 67%;
         line-height: 130%;
       }
@@ -331,6 +333,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         right: -207px;
         width: 316px;
         height: 503px;
+    }
+    &__photoCircle{
+      position: absolute;
+      top: 50%;
+      right: -100px;
+    }
+    &__SVG{
+      display: none;
     }
 }
 

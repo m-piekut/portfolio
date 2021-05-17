@@ -1,13 +1,17 @@
-
-import {ReactComponent as ProjektText} from './images/PROJEKTY.svg'
+import useChangeTittle from '../components/useChangeLanguage';
+import {ReactComponent as TittlePL} from './images/PROJEKTY.svg'
+import {ReactComponent as TittleEN} from './images/WORK.svg'
 import ProjectsAnimations from "./ProjectsAnimation";
 
 import ProjectsCards from "./ProjectsCards"
 
 const Projects = () => {
+  const {plVersion} = useChangeTittle()
+
     return ( 
         <div className="projects section">
-            <ProjektText className="pageTittle"/>
+            {plVersion ? <TittlePL className="pageTittle"/> : <TittleEN className="pageTittle"/>}
+            
             <div className="projects__content content">
 
             <ProjectsAnimations/>

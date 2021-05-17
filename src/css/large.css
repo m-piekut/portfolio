@@ -36,6 +36,12 @@
     width: 70px;
     height: 70px;
   }
+  .aboutMe__photoCircle {
+    display: none;
+  }
+  .aboutMe__SVG {
+    display: block;
+  }
   .projects__content {
     width: 90%;
     justify-content: flex-end;

@@ -149,7 +149,7 @@ table {
 }
 
 .navigation__item:nth-of-type(2):hover {
-  background-color: #003566;
+  background-color: #62B3FF;
 }
 
 .navigation__item:nth-of-type(3):hover {
@@ -169,7 +169,7 @@ table {
 }
 
 .navigation__item.active:nth-of-type(2) {
-  background-color: #003566;
+  background-color: #62B3FF;
 }
 
 .navigation__item.active:nth-of-type(3) {
@@ -289,7 +289,7 @@ table {
 }
 
 .aboutMe__tittle {
-  color: #0084FF;
+  color: #003566;
   font-size: 1.7rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -310,6 +310,7 @@ table {
 }
 
 .aboutMe__text {
+  position: relative;
   margin-left: 10%;
   padding: 15px 35px 10px 25px;
   font-size: 1.2rem;
@@ -335,6 +336,16 @@ table {
   height: 503px;
 }
 
+.aboutMe__photoCircle {
+  position: absolute;
+  top: 50%;
+  right: -100px;
+}
+
+.aboutMe__SVG {
+  display: none;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -354,7 +365,7 @@ table {
 .projects__cardWrapper {
   position: relative;
   box-shadow: 0 0 0 #000000, 0 0 0 rgba(141, 141, 141, 0.62), inset 4px 4px 12px #000000, inset -4px -4px 12px rgba(218, 218, 218, 0.25);
-  background-color: #003566;
+  background-color: #62B3FF;
   border-radius: 35px;
   width: 305px;
   height: 175px;

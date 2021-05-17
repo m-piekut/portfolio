@@ -1,24 +1,64 @@
 import { useEffect, useRef } from 'react';
 import {ReactComponent as Scene} from './images/skillsImage.svg'
 import gsap from 'gsap'
+import { useSelector } from 'react-redux';
 
 
-let html = "Swoją naukę zacząłem od HTML 5.";
-let css = "Po HTML-u  przyszedł czas na CSS 3.";
-let js = "Gdy już przyswoiłem HTML i CSS przyszedł czas na JavaScript.";
-let react = "Pierwszy framework- React, z jego pomocą wykonałem 'Foddie'.";
-let firebase = "Przy kodowaniu 'Foodie' korzystałem z Firebase.";
-let figma = "Figma służy mi do projektu graficznego.";
-let sass = "W stylowaniu korzystam z preprocesora CSS - SASS.";
-let bem = "Korzystam z metodologii BEM.";
-let git = "Wykorzystuję kontrolę wersji Git.";
-let npm = "NPM jest nieodłacznym elementem mojej pracy.";
+
 
 
 //dodaj angielską wersję
+let html,
+css,
+js,
+react,
+firebase,
+figma,
+sass,
+bem,
+git,
+npm
 
 
 const SkillsAnimation = () => {
+    const {value} = useSelector(state=> state.language)
+    
+    
+    
+    useEffect(()=>{
+        let skillText = document.querySelector('.skills__text')
+        if(value === 'PL'){
+            html = "Swoją naukę zacząłem od HTML 5.";
+            css = "Po HTML-u  przyszedł czas na CSS 3.";
+            js = "Gdy już przyswoiłem HTML i CSS przyszedł czas na JavaScript.";
+            react = "Pierwszy framework- React, z jego pomocą wykonałem 'Foddie'.";
+            firebase = "Przy kodowaniu 'Foodie' korzystałem z Firebase.";
+            figma = "Figma służy mi do projektu graficznego.";
+            sass = "W stylowaniu korzystam z preprocesora CSS - SASS.";
+            bem = "Korzystam z metodologii BEM.";
+            git = "Wykorzystuję kontrolę wersji Git.";
+            npm = "NPM jest nieodłacznym elementem mojej pracy.";
+            skillText.innerHTML= 'Kliknij na ikonę.'
+           
+            
+        }else{
+            html = "I started with HTML5.";
+            css = "After HTML, it's time for CSS 3";
+            js = "After I assimilated of HTML and CSS, it's time to turn to JavaScript.";
+            react = "The first framework - React, with its help I made 'Foodie'.";
+            firebase = "I used Firebase when coding 'Foodie";
+            figma = "Figma is helping me with graphics projects";
+            sass = "I use SASS precprocesor for styling";
+            bem = "I write with BEM metodology";
+            git = "I use Git control version";
+            npm = "NPM is an integral part of my work.";
+            skillText.innerHTML= 'Click on the icon.'
+        }
+    },[value])
+
+
+
+
     const wrapper = useRef(null)
     
     useEffect(()=>{
@@ -76,6 +116,7 @@ const SkillsAnimation = () => {
         for (const icon of icons.children) {
             icon.addEventListener('click', ()=> textChange(icon.id) )
         }
+
 
         gsap.set([ plant, icons.children, skillText], {autoAlpha:0});
         gsap.set( main, {scale: 0, transformOrigin: "50%, 50%"})

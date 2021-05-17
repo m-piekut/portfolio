@@ -43,6 +43,12 @@
       height: 70px;
 
     }
+    &__photoCircle{
+      display: none;
+    }
+    &__SVG{
+      display: block;
+    }
   }
 
   .projects{
