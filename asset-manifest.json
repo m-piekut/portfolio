@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.6d1d01a7.chunk.css",
+    "main.js": "/portfolio/static/js/main.b3754732.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b3754732.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.43d9a0ba.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.43d9a0ba.js.map",
+    "static/js/2.e91f3d92.chunk.js": "/portfolio/static/js/2.e91f3d92.chunk.js",
+    "static/js/2.e91f3d92.chunk.js.map": "/portfolio/static/js/2.e91f3d92.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.6d1d01a7.chunk.css.map": "/portfolio/static/css/main.6d1d01a7.chunk.css.map",
+    "static/js/2.e91f3d92.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e91f3d92.chunk.js.LICENSE.txt",
+    "static/media/CONTACT.aefef2fe.svg": "/portfolio/static/media/CONTACT.aefef2fe.svg",
+    "static/media/Foodie.988a1e1a.png": "/portfolio/static/media/Foodie.988a1e1a.png",
+    "static/media/KONTAKT.cd656446.svg": "/portfolio/static/media/KONTAKT.cd656446.svg",
+    "static/media/PROJEKTY.1f9e4ae8.svg": "/portfolio/static/media/PROJEKTY.1f9e4ae8.svg",
+    "static/media/SKILLS.4c049c0e.svg": "/portfolio/static/media/SKILLS.4c049c0e.svg",
+    "static/media/TECHNOLOGIE.e6908a12.svg": "/portfolio/static/media/TECHNOLOGIE.e6908a12.svg",
+    "static/media/WORK.104875b4.svg": "/portfolio/static/media/WORK.104875b4.svg",
+    "static/media/about.53dc3d8d.svg": "/portfolio/static/media/about.53dc3d8d.svg",
+    "static/media/budget.20bf1406.png": "/portfolio/static/media/budget.20bf1406.png",
+    "static/media/circle.6f64effa.svg": "/portfolio/static/media/circle.6f64effa.svg",
+    "static/media/contactImage.4bf7acfb.svg": "/portfolio/static/media/contactImage.4bf7acfb.svg",
+    "static/media/este.ca974db6.png": "/portfolio/static/media/este.ca974db6.png",
+    "static/media/projectsImage.a1a1bf66.svg": "/portfolio/static/media/projectsImage.a1a1bf66.svg",
+    "static/media/skillsImage.bafbf52a.svg": "/portfolio/static/media/skillsImage.bafbf52a.svg",
+    "static/media/stoper.858cb6b1.png": "/portfolio/static/media/stoper.858cb6b1.png",
+    "static/media/weather.1410d875.png": "/portfolio/static/media/weather.1410d875.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43d9a0ba.js",
+    "static/js/2.e91f3d92.chunk.js",
+    "static/css/main.6d1d01a7.chunk.css",
+    "static/js/main.b3754732.chunk.js"
+  ]
+}
