@@ -16,7 +16,7 @@ const ProjectsInfo = {
         {
             id:3,
             name: "Foodie",
-            info:  "Polega na tworzeniu uczt w danym lokalu. Można rejstrować użytkowników zarządać swoim profilem oraz dodawać do znajomych innych urzytkowaników. Do rozwiązań backendowych wykorzystałem firebase. Frontend zrobiony w React.",
+            info:  "Polega na tworzeniu uczt w danym lokalu. Można rejstrować użytkowników zarządać swoim profilem oraz dodawać do znajomych innych urzytkowników. Do rozwiązań backendowych wykorzystałem firebase. Frontend zrobiony w React.",
             image: foodie,
             live: "https://m-piekut.github.io/foodie/#/",
             code: "https://github.com/m-piekut/foodie",
