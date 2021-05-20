@@ -11,6 +11,7 @@ const Nav = () => {
   const dispatch = useDispatch();
   const [content, setContent] = useState(NavLanguages.PL) 
   const [showMenu, setShowMenu] = useState(true);  
+  const [test, setTest] = useState(true)
  
   
   const [languageInfo, setLanguageInfo] = useState(localStorage.getItem('Language'))
@@ -32,8 +33,11 @@ const Nav = () => {
   
   
   useEffect(()=>{  
-    const plButton = document.querySelector('.navigation__languageButton--PL')
-    const enButton = document.querySelector('.navigation__languageButton--EN')
+    if(test){
+      var plButton = document.querySelector('.navigation__languageButton--PL')
+      var enButton = document.querySelector('.navigation__languageButton--EN')
+      // setTest(false)
+    }
     console.log(languageInfo)
     if(value === 'EN'){
       setContent(NavLanguages.EN)
@@ -61,7 +65,7 @@ const Nav = () => {
           <NavLink className="navigation__item " to="/skills" onClick={()=>setShowMenu(!showMenu)}>{content.skills}  </NavLink>
           <NavLink className="navigation__item " to="/contact" onClick={()=>setShowMenu(!showMenu)}>{content.contact}  </NavLink>
         <div className="navigation__languageButtons">
-          <button className="navigation__languageButton navigation__languageButton--PL navigation__languageButton--active" onClick={()=>{handleChangeLanguage('PL'); setShowMenu(!showMenu)}}>PL</button>
+          <button className="navigation__languageButton navigation__languageButton--PL navigation__languageButton--active" onClick={()=>handleChangeLanguage('PL')}>PL</button>
           <button className="navigation__languageButton navigation__languageButton--EN" onClick={()=> {handleChangeLanguage('EN'); setShowMenu(!showMenu)}}>EN</button>
 
         </div>
