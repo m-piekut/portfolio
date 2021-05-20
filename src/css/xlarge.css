@@ -41,6 +41,7 @@
   }
   .skills__SVGWrapper {
     align-self: center;
+    width: 100%;
   }
   .skills__SVG {
     height: 700px;
