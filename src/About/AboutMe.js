@@ -1,26 +1,41 @@
 import PageTittle from "../components/PageTittlle"
 import useChangeLanguage from "../components/useChangeLanguage";
-
+import gsap from 'gsap'
 import BigCharacter from "./BigCharacter";
 import CircleAnimation from "./CircleAnimation";
 
 import {ReactComponent as BigScene} from './images/about.svg'
+import { useEffect, useRef } from "react";
 
 
 
 
 
 const AboutMe = () => {
+    const wrapper = useRef(null)
     const {plVersion} = useChangeLanguage()
+    useEffect(()=>{
+        const [elements] = wrapper.current.children;
+        const tittleWrapper = document.querySelector('.aboutMe__tittleWrapper')
+        const circles = document.querySelectorAll('.aboutMe__circle')
+        const text = document.querySelector('.aboutMe__text')
+        gsap.set([tittleWrapper, text], {autoAlpha: 0})
+        const tl = gsap.timeline({defaults: {ease: 'power3.inOut'}});
+        tl.fromTo(tittleWrapper,{x: '-=200'}, {autoAlpha:1, x: '+=200', duration:1})
+        .fromTo(text , {x: '-=200'}, {x:"+=200", autoAlpha:1, duration:1}, "-=0.5")
+        .to(circles ,{stagger: 0.3, autoAlpha:1, scale: "0.8",yoyo: true, repeat:-1})
+    },[])
+
     return ( 
-        <div className="aboutMe">
+        <div ref={wrapper} className="aboutMe">
             <div className="aboutMe__tittleWrapper drop">
                 {plVersion ? <h1 className="aboutMe__tittle"> Cześć,<br/> Jestem Marek <br/>  Frontend-Developer </h1> : <h1 className="aboutMe__tittle"> Hello,<br/> I am Marek <br/>  Frontend-Developer </h1>}
                 
                 <div className="aboutMe__circleWrapper">
-                    <div className="aboutMe__circle inner darkColor"></div>
+                    <div className="aboutMe__circle drop darkColor"></div>
                     <div className="aboutMe__circle drop technologyColor"></div>
-                    <div className="aboutMe__circle inner contactColor"></div>
+                    <div className="aboutMe__circle drop contactColor"></div>
+
                 </div>
             </div >
             <div className="aboutMe__text inner">

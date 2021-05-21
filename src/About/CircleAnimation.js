@@ -13,8 +13,8 @@ const CircleAnimation = () => {
         const tl = gsap.timeline({defaults: {ease: 'power3.inOut'}});
 
         tl
-        .fromTo(character, {scale:0},{scale:1, autoAlpha:1 , duration:1})
-        .fromTo(circleWrapper, {scale:2},{scale:1, autoAlpha:1, duration:1}, "-=")
+        .fromTo(circleWrapper, {scale:2},{scale:1, autoAlpha:1, duration:1}, '+=1' )
+        .fromTo(character, {scale:0},{scale:1, autoAlpha:1 , duration:1 }, '-=0.5')
 
 
     },[])

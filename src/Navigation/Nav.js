@@ -30,6 +30,12 @@ const Nav = () => {
     localStorage.setItem('Language', language)
     dispatch(changeLanguage(localStorage.getItem("Language")))
   }
+
+  useEffect(()=>{
+
+  },[])
+
+
   
   
   useEffect(()=>{  
