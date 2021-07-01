@@ -140,7 +140,7 @@ const ProjectsInfo = {
         name: "Work-aplications",
         info: "Aplikacja w react-native pozwalająca na zapisywanie do jakiej firmy aplikowałeś.",
         image: workAplications,
-        live: "https://m-piekut.github.io/portfolio/#/projects",
+        live: "https://m-piekut.github.io/portfolio/static/media/work.37f07ca6.jpg",
         code: "https://github.com/m-piekut/work-handler",
         icons:[
             {
@@ -285,7 +285,7 @@ const ProjectsInfo = {
         name: "Work-aplications",
         info: "Application in react-native that allows you to save to which company you applied.",
         image: workAplications,
-        live: "https://m-piekut.github.io/portfolio/#/projects",
+        live: "https://m-piekut.github.io/portfolio/static/media/work.37f07ca6.jpg",
         code: "https://github.com/m-piekut/work-handler",
         icons:[
             {
