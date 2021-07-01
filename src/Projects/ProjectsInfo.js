@@ -3,6 +3,7 @@ import budget from './images/budget.png'
 import foodie from './images/Foodie.png'
 import weather from './images/weather.png'
 import stoper from './images/stoper.png'
+import workAplications from './images/work.jpg'
 const js = "fab fa-js"
 const sass = "fab fa-sass"
 const html = "fab fa-html5"
@@ -134,6 +135,27 @@ const ProjectsInfo = {
             }
         ]
     },
+    {
+        id:6,
+        name: "Work-aplications",
+        info: "Aplikacja w react-native pozwalająca na zapisywanie do jakiej firmy aplikowałeś.",
+        image: workAplications,
+        live: "https://m-piekut.github.io/portfolio/#/projects",
+        code: "https://github.com/m-piekut/work-handler",
+        icons:[
+            {
+            id:1,
+            name: "react-native",
+            code: react
+            },
+            {
+            id:2,
+            name: "sass",
+            code: sass
+            },
+
+        ]
+    },
     
 ],
     "EN":[
@@ -258,7 +280,27 @@ const ProjectsInfo = {
             }
         ]
     },
-    
+    {
+        id:6,
+        name: "Work-aplications",
+        info: "Application in react-native that allows you to save to which company you applied.",
+        image: workAplications,
+        live: "https://m-piekut.github.io/portfolio/#/projects",
+        code: "https://github.com/m-piekut/work-handler",
+        icons:[
+            {
+            id:1,
+            name: "react-native",
+            code: react
+            },
+            {
+            id:2,
+            name: "sass",
+            code: sass
+            },
+
+        ]
+    },
 ]
 
 }
